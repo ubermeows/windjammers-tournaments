@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::prefix(LaravelLocalization::setLocale())->group(function () {
-	Route::get('/', function () {
-	    return view('welcome');
-	});
+    Route::get('/', 'TournamentController@index')->name('index');
     Route::get('rules', 'TournamentController@rules')->name('rules');
     Route::get('{hook}', 'TournamentController@show')->name('show');
 });

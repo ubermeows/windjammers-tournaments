@@ -7,13 +7,18 @@ use Illuminate\Http\Request;
 
 class TournamentController extends Controller
 {
+    public function index()
+    {
+        return View::make('tournaments.show'); 
+    }
+
     public function show()
     {
-    	return View::make('tournaments.show'); 
+        return View::make('tournaments.show'); 
     }
 
     public function rules()
     {
-    	return View::make('tournaments.rules'); 
+        return View::make('tournaments.rules'); 
     }
 }
