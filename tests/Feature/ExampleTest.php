@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExampleTest extends TestCase
 {
-    use DisabledLocalization;
+    use RefreshDatabase, DisabledLocalization;
 
     /**
      * A basic test example.
