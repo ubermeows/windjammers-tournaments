@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mcamara\LaravelLocalization\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +16,6 @@ Route::prefix(LaravelLocalization::setLocale())->group(function () {
 	Route::get('/', function () {
 	    return view('welcome');
 	});
+    Route::get('rules', 'TournamentController@rules')->name('rules');
+    Route::get('{hook}', 'TournamentController@show')->name('show');
 });
