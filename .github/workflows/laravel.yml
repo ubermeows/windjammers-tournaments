@@ -33,3 +33,7 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+    - name: Invoke deployment hook
+      uses: distributhor/workflow-webhook@v1
+      env:
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
