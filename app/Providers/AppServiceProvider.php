@@ -26,7 +26,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Route::bind('tournament_slug', function ($value) {
-            return Tournament::where('slug', $value)->firstOrFail();
+            return Tournament::where('slug', $value)
+                ->with('localizations')
+                ->firstOrFail();
         });
     }
 }
