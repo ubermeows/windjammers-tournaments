@@ -2,8 +2,11 @@
 
 namespace App\Repositories\Transformers;
 
+use App;
 use App\Models\Tournament;
+use App\Models\Localization;
 use League\Fractal\TransformerAbstract;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /**
  * Class ArtTransformer.
@@ -21,6 +24,19 @@ class TournamentTransformer extends TransformerAbstract
      */
     public function transform(Tournament $tournament)
     {
-        return $tournament->toArray();
+        $localization = $this->getLocalization($tournament);
+
+        return $tournament->toArray() + [
+            'description' => $localization->description,
+            'rules' => $localization->rules,
+        ];
+    }
+
+    protected function getLocalization(Tournament $tournament): Localization
+    {
+        return $tournament
+            ->localizations()
+            ->where('locale', App::getLocale())
+            ->first();
     }
 }

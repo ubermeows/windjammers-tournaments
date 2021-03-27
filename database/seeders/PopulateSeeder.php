@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Tournament;
+use App\Models\Localization;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Factories\Sequence;
 
 class PopulateSeeder extends Seeder
 {
@@ -14,7 +16,7 @@ class PopulateSeeder extends Seeder
      */
     public function run()
     {
-        Tournament::factory()
+        $tournament = Tournament::factory()
             ->winners()
             ->youtube()
             ->create([
@@ -22,11 +24,19 @@ class PopulateSeeder extends Seeder
                 'slug' => 'winter2021',
             ]);
 
-        Tournament::factory()
+        Localization::factory()
+            ->count(2)
+            ->state(new Sequence(
+                ['locale' => 'en'],
+                ['locale' => 'fr'],
+            ))
             ->create([
-                'title' => 'Winter2022',
-                'slug' => 'winter2022',
-                'started_at' => '2021-01-10 21:00 CET',
+                'tournament_id' => $tournament->id,
+                'description' => 'blablabla c la description',
+                'rules' => [
+                    'format Suisse',
+                    'BO3/FT2',
+                ],
             ]);
     }
 }

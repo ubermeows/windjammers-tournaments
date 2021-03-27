@@ -20,7 +20,7 @@ class CreateTournamentsTable extends Migration
             $table->string('challonge_url')->nullable();
             $table->json('winners')->nullable();
             $table->string('video')->nullable();
-            $table->timestamp('started_at')->nullable();
+            $table->string('started_at')->nullable();
             $table->timestamps();
         });
     }
