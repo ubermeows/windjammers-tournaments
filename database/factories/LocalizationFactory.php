@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Tournament;
 use App\Models\Localization;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,7 +23,8 @@ class LocalizationFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'tournament_id' => Tournament::factory()->create(),
+            'locale' => 'en',
         ];
     }
 }
