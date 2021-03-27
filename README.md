@@ -7,5 +7,6 @@
 docker-compose build
 docker-compose up -d
 docker-compose exec app sh
+cp .env.example .env
 php artisan fresh
 ```
