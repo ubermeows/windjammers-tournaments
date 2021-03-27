@@ -24,9 +24,17 @@ class TournamentTransformer extends TransformerAbstract
      */
     public function transform(Tournament $tournament)
     {
+        $attributes = $tournament->only([
+            'title', 
+            'challonge_url', 
+            'winners',
+            'video',
+            'started_at',
+        ]);
+        
         $localization = $this->getLocalization($tournament);
 
-        return $tournament->toArray() + [
+        return $attributes + [
             'description' => $localization->description,
             'rules' => $localization->rules,
         ];
