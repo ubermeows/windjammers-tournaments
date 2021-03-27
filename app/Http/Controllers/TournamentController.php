@@ -18,11 +18,12 @@ class TournamentController extends Controller
     public function index()
     {
         $tournament = $this->repository
+            ->skipPresenter()
             ->orderBy('started_at', 'DESC')
-            ->first();
+            ->firstOrFail();
 
         return redirect()->route('show', [
-            'slug' => $tournament['data']['slug'],
+            'slug' => $tournament['slug'],
         ]);
     }
 
