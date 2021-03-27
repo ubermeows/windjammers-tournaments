@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Tournament;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Route::bind('tournament_slug', function ($value) {
+            return Tournament::where('slug', $value)->firstOrFail();
+        });
     }
 }

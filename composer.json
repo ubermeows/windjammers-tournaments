@@ -11,7 +11,9 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "mcamara/laravel-localization": "^1.6"
+        "league/fractal": "^0.19.2",
+        "mcamara/laravel-localization": "^1.6",
+        "prettus/l5-repository": "^2.7"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
