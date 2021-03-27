@@ -39,10 +39,6 @@ class PopulateSeeder extends Seeder
             ))
             ->create([
                 'tournament_id' => $tournament->id,
-                'rules' => [
-                    'format Suisse',
-                    'BO3/FT2',
-                ],
             ]);
     }
 }

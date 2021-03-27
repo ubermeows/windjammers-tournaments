@@ -23,8 +23,12 @@ class LocalizationFactory extends Factory
     public function definition()
     {
         return [
-            'tournament_id' => Tournament::factory()->create(),
+            'tournament_id' => Tournament::factory()->winners()->create(),
             'locale' => 'en',
+            'rules' => [
+                'format Suisse',
+                'BO3/FT2',
+            ],
         ];
     }
 }
