@@ -20,8 +20,6 @@ class PopulateSeeder extends Seeder
             ->winners()
             ->youtube()
             ->create([
-                'title' => 'Winter2021',
-                'slug' => 'winter2021',
                 'started_at' => '2021-01-10 21:00 CET',
             ]);
 

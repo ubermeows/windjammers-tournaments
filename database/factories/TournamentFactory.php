@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Str;
 use App\Models\Tournament;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -21,10 +22,14 @@ class TournamentFactory extends Factory
      */
     public function definition()
     {
+        $title = $this->title();
+
+        $slug = Str::slug($title, '');
+
         return [
-            'title' => $this->faker->title,
-            'slug' => $this->faker->slug,
-            'challonge_url' => 'https://windjammersfr.challonge.com/fr/winterleague1',
+            'title' => $title,
+            'slug' => $slug,
+            'challonge_url' => 'https://windjammersfr.challonge.com/fr/' . $slug,
             'winners' => null,
             'video' => null,
             'started_at' => null,
@@ -60,5 +65,14 @@ class TournamentFactory extends Factory
                 ],
             ];
         });
+    }
+
+    protected function title(): string
+    {
+        $seasons = ['spring', 'summer', 'autumn', 'winter'];
+
+        shuffle($seasons);
+
+        return $seasons[0] . '20' . random_int(20, 99);
     }
 }
