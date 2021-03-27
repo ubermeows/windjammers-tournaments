@@ -36,4 +36,4 @@ jobs:
     - name: Invoke deployment hook
       uses: distributhor/workflow-webhook@v1
       env:
-        webhook_url: ${{ productions.WEBHOOK_URL }}
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
