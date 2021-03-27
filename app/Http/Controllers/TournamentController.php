@@ -21,9 +21,9 @@ class TournamentController extends Controller
             ->orderBy('started_at', 'DESC')
             ->first();
 
-        return View::make('tournaments.show', [
-            'tournament' => $tournament['data'],
-        ]); 
+        return redirect()->route('show', [
+            'slug' => $tournament['data']['slug'],
+        ]);
     }
 
     public function show(Request $request)

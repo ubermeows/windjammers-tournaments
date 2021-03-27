@@ -26,12 +26,13 @@ class TournamentTransformer extends TransformerAbstract
     {
         $attributes = $tournament->only([
             'title', 
+            'slug', 
             'challonge_url', 
             'winners',
             'video',
             'started_at',
         ]);
-        
+
         $localization = $this->getLocalization($tournament);
 
         return $attributes + [
