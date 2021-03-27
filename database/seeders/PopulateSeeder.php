@@ -30,11 +30,11 @@ class PopulateSeeder extends Seeder
             ->state(new Sequence(
                 [
                     'locale' => 'en',
-                    'description' => 'blablabla c la description en anglais.',
+                    'description' => 'blablabla c la description en anglais Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 ],
                 [
                     'locale' => 'fr',
-                    'description' => 'blablabla c la description en francais.',
+                    'description' => 'blablabla c la description en francais Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 ],
             ))
             ->create([
