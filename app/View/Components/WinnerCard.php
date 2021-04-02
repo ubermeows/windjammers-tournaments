@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use Str;
 use Illuminate\View\Component;
 
 class WinnerCard extends Component
@@ -30,6 +31,13 @@ class WinnerCard extends Component
                 return '3rd';
                 break;
         }
+    }
+
+    public function avatar(): string
+    {
+        $name = Str::snake($this->winner);
+
+        return asset('storage/players/' . $name . '.png');
     }
 
     /**
