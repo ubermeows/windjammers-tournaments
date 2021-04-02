@@ -59,9 +59,9 @@ class TournamentFactory extends Factory
         return $this->state(function (array $attributes) {
             return [
                 'winners' => [
-                    'Pyrotek',
-                    'Santa',
-                    'Otherend',
+                    'pyrotek',
+                    'santa_with_muscles',
+                    'otherend',
                 ],
             ];
         });
