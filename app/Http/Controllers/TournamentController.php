@@ -24,8 +24,8 @@ class TournamentController extends Controller
         ]); 
     }
 
-    public function rules()
+    public function howTo()
     {
-        return View::make('tournaments.rules'); 
+        return View::make('tournaments.how_to'); 
     }
 }
