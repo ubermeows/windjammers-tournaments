@@ -9,5 +9,8 @@ docker-compose up -d
 docker-compose exec app sh
 cp .env.example .env
 composer install
+npm install
+npm run production
+php artisan storage:link
 php artisan fresh
 ```
