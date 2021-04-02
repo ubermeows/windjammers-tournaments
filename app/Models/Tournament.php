@@ -10,7 +10,7 @@ class Tournament extends Model
 {
     use HasFactory;
 
-	protected $appends = ['localization'];
+    protected $appends = ['localization', 'is_over'];
 
     protected $casts = [
         'winners' => 'json',
@@ -23,8 +23,13 @@ class Tournament extends Model
 
     public function getLocalizationAttribute(): Localization
     {
-    	return $this->localizations
-    		->where('locale', App::getLocale())
-    		->first();
+        return $this->localizations
+            ->where('locale', App::getLocale())
+            ->first();
+    }
+
+    public function getIsOverAttribute(): bool
+    {
+        return ! empty($this->winners);
     }
 }
