@@ -32,7 +32,7 @@
             </ul>
         </div>
         @if (!$tournament['is_over'])
-        <p class="mt-3">Si tu ne sais pas encore comment nous rejoindre le jour du tournoi, jette un coup d'œil à <a href="{{route('rules')}}" class="text-indigo-500 underline">la procédure</a>.</p>
+        <p class="mt-3">Si tu ne sais pas encore comment nous rejoindre le jour du tournoi, jette un coup d'œil à <a href="{{route('howto')}}" class="text-indigo-500 underline">la procédure</a>.</p>
         <div class="mt-8 text-center">
             <a href="{{$tournament['challonge_url']}}" rel="noreferrer nofollow noopener" target="_blank" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-blue-700 bg-blue-100 border border-transparent rounded-md shadow-sm hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Participer au tournoi
