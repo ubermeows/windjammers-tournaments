@@ -1,4 +1,13 @@
 @extends('app')
+
+@push('metas')
+<title>{{$tournament['title']}} | Windjammers France</title>
+<meta property='og:title' content="{{$tournament['title']}}">
+<meta property='og:description' content="{{$tournament['localization']['description']}}">
+@endpush
+
+@section('title', $tournament['title'])
+
 @section('content')
 <section class="relative flex items-center min-h-450px lg:min-h-600px xl:min-h-800px">
     <div class="relative z-10 max-w-screen-md px-4 mx-auto sm:px-6 text-center">
