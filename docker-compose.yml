@@ -18,7 +18,7 @@ services:
       - ./:/var/www
       - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
     networks:
-      - app-network
+      - windjammers-tournaments-network
 
   #Nginx Service
   webserver:
@@ -33,7 +33,7 @@ services:
       - ./:/var/www
       - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
     networks:
-      - app-network
+      - windjammers-tournaments-network
 
   #MySQL Service
   db:
@@ -53,15 +53,13 @@ services:
       - dbdata:/var/lib/mysql/
       - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
     networks:
-      - app-network
+      - windjammers-tournaments-network
 
 #Docker Networks
 networks:
-  app-network:
+  windjammers-tournaments-network:
     driver: bridge
 #Volumes
 volumes:
   dbdata:
-    driver: local
-  dbtestingdata:
     driver: local
