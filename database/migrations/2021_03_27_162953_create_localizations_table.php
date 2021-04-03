@@ -17,7 +17,7 @@ class CreateLocalizationsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('tournament_id');
             $table->string('locale');
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->json('rules')->nullable();
             $table->timestamps();
         });
