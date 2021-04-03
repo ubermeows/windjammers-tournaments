@@ -23,12 +23,12 @@
     </svg>
     <div class="mx-auto text-gray-500 lg:max-w-4xl md:text-lg">
         <h3 class="mb-4 text-2xl font-bold text-gray-900 md:text-3xl">À propos de ce tournoi</h3>
-        <p>{{$tournament['localization']['description']}}</p>
+        <p>{!!$tournament['localization']['description']!!}</p>
         <p class="mt-3">Début du tournoi : {{$tournament['started_at']}}</p>
         <div class="mt-3">
             Règles :
             <ul class="mt-0">
-                @foreach($tournament['localization']['rules'] as $rule) <li>{{$rule}}</li> @endforeach
+                @foreach($tournament['localization']['rules'] as $rule) <li>{!!$rule!!}</li> @endforeach
             </ul>
         </div>
         @if (!$tournament['is_over'])
