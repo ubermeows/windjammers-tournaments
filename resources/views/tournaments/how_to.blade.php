@@ -15,3 +15,6 @@
 <br>
 <p>:five: Préparer son compte aux matchs ranked</p>
 <p>- Pour pouvoir participer aux matchs il est nécessaire de paramétrer son compte en "Ranked Player" (voir vidéo)</p>
+<video controls width="500">
+    <source src="{{asset('storage/webm/rank.webm')}}" type="video/webm">
+</video>
