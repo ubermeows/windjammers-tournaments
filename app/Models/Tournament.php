@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App;
+use App\Casts\StartedAt;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -14,6 +15,7 @@ class Tournament extends Model
 
     protected $casts = [
         'winners' => 'json',
+        'started_at' => StartedAt::class,
     ];
 
     public function localizations()

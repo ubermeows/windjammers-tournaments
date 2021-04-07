@@ -20,7 +20,7 @@ class PopulateSeeder extends Seeder
             ->winners()
             ->youtube()
             ->create([
-                'started_at' => '2021-01-10 21:00 CET',
+                'started_at' => '2021-01-10 21:00',
             ]);
 
         Localization::factory()
