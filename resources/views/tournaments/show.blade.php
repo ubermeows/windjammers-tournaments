@@ -9,14 +9,7 @@
 @section('title', $tournament['title'])
 
 @section('content')
-<section class="relative flex items-center min-h-450px lg:min-h-600px xl:min-h-800px">
-    <div class="relative z-10 max-w-screen-md px-4 mx-auto text-center sm:px-6">
-        <h1 class="text-lg text-white md:text-2xl lg:text-3xl font-display text-shadow">{{$tournament['title']}}</h1>
-        <h2 class="text-lg text-white md:text-1xl lg:text-1xl font-display text-shadow">{{$tournament['subtitle']}}</h2>
-    </div>
-    <div class="scanlines"></div>
-    <div x-data="parallaxBackground()" x-ref="bg" @scroll.window="handleScroll" class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover -z-1" style="background-image: url('https://t3.ftcdn.net/jpg/03/81/01/88/240_F_381018889_71KL86GV7Sd5ueAuxrRUWCCxwNlbzzZw.jpg');background-position-x: center;"></div>
-</section>
+<x-banner :tournament="$tournament"  />
 <section class="relative px-4 pt-16 pb-16 bg-white lg:px-8 lg:pb-24 md:pb-20 sm:px-6">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" class="absolute left-0 z-10 -mt-4 bottom-full">
         <path fill="#ffffff" fill-opacity="1" d="M0,128L60,117.3C120,107,240,85,360,101.3C480,117,600,171,720,176C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,200L1380,200C1200,200,1200,200,1080,200C960,200,840,200,720,200C600,200,480,200,360,200C240,200,120,200,60,200L0,200Z"></path>

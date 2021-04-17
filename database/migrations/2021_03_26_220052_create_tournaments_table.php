@@ -17,6 +17,7 @@ class CreateTournamentsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('subtitle');
+            $table->string('image')->nullable();
             $table->string('slug');
             $table->string('challonge_url')->nullable();
             $table->json('winners')->nullable();
