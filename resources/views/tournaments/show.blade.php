@@ -21,10 +21,12 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" class="absolute left-0 z-10 -mt-4 bottom-full">
         <path fill="#ffffff" fill-opacity="1" d="M0,128L60,117.3C120,107,240,85,360,101.3C480,117,600,171,720,176C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,200L1380,200C1200,200,1200,200,1080,200C960,200,840,200,720,200C600,200,480,200,360,200C240,200,120,200,60,200L0,200Z"></path>
     </svg>
-    <div class="mx-auto text-gray-500 lg:max-w-4xl md:text-lg">
+    <div class="mx-auto text-gray-700 lg:max-w-4xl md:text-lg">
         <h3 class="mb-4 text-2xl font-bold text-gray-900 md:text-3xl">À propos de ce tournoi</h3>
-        <p>{!!$tournament['localization']['description']!!}</p>
-        <p class="mt-3">Début du tournoi : {{$tournament['started_at']}}</p>
+        <div class="prose prose-lg max-w-none">
+            {!!$tournament['localization']['description']!!}
+        </div>
+        <p class="pt-3 mt-6 border-t-2 border-gray-100"><span class="font-bold">Début du tournoi</span> : {{$tournament['started_at']}}</p>
         <div class="mt-3">
             Règles :
             <ul class="mt-0">

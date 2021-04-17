@@ -9,7 +9,7 @@
 @section('title', 'How to')
 
 @section('content')
-<div class="px-4 pt-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div class="px-4 pt-16 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto prose">
         <h1>How to 🥏</h1>
         <h2>1. Installer Fightcade</h2>
@@ -24,9 +24,12 @@
             <li>Relancer <b>Fightcade2</b> pour prendre en compte les nouvelles ROMs</li>
         </ul>
         <h2>4. Ajouter le looby du tournoi</h2>
-        <p>Une fois connecté à <b>Fighcade2</b> ajouter le loobie du tournoi en recherchant l'identifiant : <b>Windjammers FC2</b> (voir vidéo)</p>
+        <p>Une fois connecté à <b>Fighcade2</b> ajouter le loobie du tournoi en recherchant l'identifiant : <b>Windjammers FC2</b></p>
+        <video controls width="500">
+            <source src="{{asset('storage/webm/rank.webm')}}" type="video/webm">
+        </video>
         <h2>5. Préparer son compte aux matchs ranked</h2>
-        <p>Pour pouvoir participer aux matchs il est nécessaire de paramétrer son compte en "Ranked Player" (voir vidéo)</p>
+        <p>Pour pouvoir participer aux matchs il est nécessaire de paramétrer son compte en "Ranked Player"</p>
         <video controls width="500">
             <source src="{{asset('storage/webm/rank.webm')}}" type="video/webm">
         </video>

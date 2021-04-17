@@ -15,13 +15,13 @@
                 </svg>
             </a>
         </div>
-        <div class="flex justify-center mt-4 ml-auto text-gray-400 md:order-2 md:mt-0">
+        <div class="flex justify-center mt-4 ml-auto space-x-1 text-gray-400 md:order-2 md:mt-0">
             <a class="{{ app()->getLocale() === 'fr' ? 'text-gray-500 underline' : 'hover:text-gray-500'}}" href="/fr">
-                <span>fr</span>
+                <span>Français</span>
             </a>
             <span>/</span>
             <a class="{{ app()->getLocale() === 'en' ? 'text-gray-500 underline' : 'hover:text-gray-500'}}" href="/en">
-                <span>en</span>
+                <span>English</span>
             </a>
         </div>
     </div>
