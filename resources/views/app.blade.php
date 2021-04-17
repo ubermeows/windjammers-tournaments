@@ -13,10 +13,11 @@
 </head>
 
 <body class="antialiased">
-    @include('parts.navbar')
+    @include('parts.navbar', ['isHome' => request()->routeIs('show')])
     <main class="min-h-screen font-body">
         @yield('content')
     </main>
     @include('parts.footer')
 </body>
+
 </html>

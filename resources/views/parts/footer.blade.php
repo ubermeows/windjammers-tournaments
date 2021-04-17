@@ -15,6 +15,15 @@
                 </svg>
             </a>
         </div>
+        <div class="flex justify-center mt-4 ml-auto text-gray-400 md:order-2 md:mt-0">
+            <a class="{{ app()->getLocale() === 'fr' ? 'text-gray-500 underline' : 'hover:text-gray-500'}}" href="/fr">
+                <span>fr</span>
+            </a>
+            <span>/</span>
+            <a class="{{ app()->getLocale() === 'en' ? 'text-gray-500 underline' : 'hover:text-gray-500'}}" href="/en">
+                <span>en</span>
+            </a>
+        </div>
     </div>
     <div class="px-4 mx-auto mt-6 max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div class="md:order-1">
@@ -22,5 +31,6 @@
                 © 2021 Windjammers France. Made with 💕 by <a href="https://ubermeows.com/" class="font-bold">übermeows.</a>
             </p>
         </div>
+
     </div>
 </footer>
