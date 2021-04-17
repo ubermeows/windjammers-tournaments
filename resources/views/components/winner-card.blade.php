@@ -7,8 +7,5 @@
         <p class="text-sm font-medium text-gray-900">
             {{$winner}}
         </p>
-        <p class="text-sm text-gray-500 truncate">
-            8 - 0 - 0
-        </p>
     </div>
 </div>
