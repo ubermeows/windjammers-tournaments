@@ -26,7 +26,7 @@
         <div class="prose prose-lg max-w-none">
             {!!$tournament['localization']['description']!!}
         </div>
-        <p class="pt-3 mt-6 border-t-2 border-gray-100"><span class="font-bold">Début du tournoi</span> : {{$tournament['started_at']}}</p>
+        <p class="pt-6 mt-6 border-t-2 border-gray-100"><span class="font-bold">Début du tournoi</span> : {{$tournament['started_at']}}</p>
         <div class="mt-3">
             Règles :
             <ul class="mt-0">
