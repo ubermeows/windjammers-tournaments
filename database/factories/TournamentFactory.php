@@ -28,6 +28,7 @@ class TournamentFactory extends Factory
 
         return [
             'title' => $title,
+            'subtitle' => 'du fun, du frais, du frisbee',
             'slug' => $slug,
             'challonge_url' => 'https://windjammersfr.challonge.com/fr/' . $slug,
             'winners' => null,

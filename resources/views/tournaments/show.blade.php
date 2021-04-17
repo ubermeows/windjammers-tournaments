@@ -12,7 +12,7 @@
 <section class="relative flex items-center min-h-450px lg:min-h-600px xl:min-h-800px">
     <div class="relative z-10 max-w-screen-md px-4 mx-auto text-center sm:px-6">
         <h1 class="text-lg text-white md:text-2xl lg:text-3xl font-display text-shadow">{{$tournament['title']}}</h1>
-        <h2 class="text-lg text-white md:text-1xl lg:text-1xl font-display text-shadow">du fun, du frais, du frisbee</h2>
+        <h2 class="text-lg text-white md:text-1xl lg:text-1xl font-display text-shadow">{{$tournament['subtitle']}}</h2>
     </div>
     <div class="scanlines"></div>
     <div x-data="parallaxBackground()" x-ref="bg" @scroll.window="handleScroll" class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover -z-1" style="background-image: url('https://t3.ftcdn.net/jpg/03/81/01/88/240_F_381018889_71KL86GV7Sd5ueAuxrRUWCCxwNlbzzZw.jpg');background-position-x: center;"></div>
