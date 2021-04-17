@@ -16,11 +16,11 @@
             </a>
         </div>
         <div class="flex justify-center mt-4 ml-auto space-x-1 text-gray-400 md:order-2 md:mt-0">
-            <a class="{{ app()->getLocale() === 'fr' ? 'text-gray-500 underline' : 'hover:text-gray-500'}}" href="/fr">
+            <a class="{{ app()->getLocale() === 'fr' ? 'hover:text-gray-500' : 'text-gray-500 underline'}}" href="/fr">
                 <span>Français</span>
             </a>
             <span>/</span>
-            <a class="{{ app()->getLocale() === 'en' ? 'text-gray-500 underline' : 'hover:text-gray-500'}}" href="/en">
+            <a class="{{ app()->getLocale() === 'en' ? 'hover:text-gray-500' : 'text-gray-500 underline'}}" href="/en">
                 <span>English</span>
             </a>
         </div>
