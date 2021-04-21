@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App;
 use View;
 use App\Models\Tournament;
 use Illuminate\Http\Request;
@@ -26,6 +27,10 @@ class TournamentController extends Controller
 
     public function howTo()
     {
-        return View::make('tournaments.how_to'); 
+        $locale = App::getLocale();
+
+        $view = $locale . '_how_to';
+
+        return View::make('tournaments.' . $view); 
     }
 }

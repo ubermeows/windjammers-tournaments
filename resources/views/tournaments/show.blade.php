@@ -19,7 +19,12 @@
         <div class="prose prose-lg max-w-none">
             {!!$tournament['localization']['description']!!}
         </div>
-        <p class="pt-6 mt-6 border-t-2 border-gray-100"><span class="font-bold">{{__('tournament.start')}}</span> : {{$tournament['started_at']}}</p>
+        <p class="pt-6 mt-6 border-t-2 border-gray-100">
+            <span class="font-bold">{{__('tournament.start')}}</span> : {{$tournament['started_at']}}
+        </p>
+        <p>
+            <span class="font-bold">{{__('tournament.streaming')}}</span> : <a href='https://www.twitch.tv/lamegaforgelive'>twitch.tv/lamegaforgelive</a>
+        </p>
         <div class="mt-3">
             {{__('tournament.rules')}} :
             <ul class="mt-0">
