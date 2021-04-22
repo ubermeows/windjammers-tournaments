@@ -19,11 +19,11 @@
         <h2>3. Installer Windjammers</h2>
         <ul>
             <li>Lancez <b>Fightcade 2</b>, puis cliquez sur <code>ROMS > Open ROMS Folder</code></li>
-            <li>Dans la nouvelle fenêtre cliquez sur le lien <code>FBNeo ROMs</code>, ce lien vous emmène vers le dossier contenant les ROMs de l'émulateur</li>
+            <li>Dans la nouvelle fenêtre, cliquez sur le lien <code>FBNeo ROMs</code>, ce lien vous emmène vers le dossier contenant les ROMs de l'émulateur</li>
             <li>Dans ce dossier, insérez les archives <b><a href="{{asset('storage/roms/neogeo.zip')}}">neogeo.zip</a></b> et <b><a href="{{asset('storage/roms/wjammers.zip')}}">wjammers.zip</a></b></li>
             <li>Relancez <b>Fightcade2</b> pour prendre en compte les nouvelles ROMs</li>
         </ul>
-        <h2>4. Ajouter le looby du tournoi</h2>
+        <h2>4. Ajouter le lobby du tournoi</h2>
         <p>Une fois connecté à <b>Fighcade2</b>, ajoutez le lobby du tournoi en recherchant l'identifiant : <b>Windjammers</b>.</p>
         <p><b>Attention</b> à bien selectionner le lobby <b>ARCADE FC2</b>.</p>
         <video controls width="500">
