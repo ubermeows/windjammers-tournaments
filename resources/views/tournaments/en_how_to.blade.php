@@ -25,7 +25,7 @@
         </ul>
         <h2>4. Ajouter le looby du tournoi</h2>
         <p>Une fois connecté à <b>Fighcade2</b> ajouter le loobie du tournoi en recherchant l'identifiant : <b>Windjammers</b></p>
-        <p><b>Attention</b> à bien selectionner le lobbie <b>ARCADE FC2</b></p>
+        <p><b>Attention</b> à bien selectionner le lobby <b>ARCADE FC2</b></p>
         <video controls width="500">
             <source src="{{asset('storage/webm/loobie.webm')}}" type="video/webm">
         </video>
