@@ -16,7 +16,7 @@
     </svg>
     <div class="mx-auto text-gray-700 lg:max-w-4xl md:text-lg">
         <h3 class="mb-4 text-2xl font-bold text-gray-900 md:text-3xl">{{__('tournament.about')}}</h3>
-        <div class="prose prose-lg max-w-none">
+        <div class="prose md:prose-lg max-w-none">
             {!!$tournament['localization']['description']!!}
         </div>
         <p class="pt-6 mt-6 border-t-2 border-gray-100">
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <h3 class="mt-20 mb-4 text-2xl font-bold text-gray-900 md:text-3xl">{{__('tournament.result')}}</h3>
+        <h3 class="mt-10 mb-4 text-2xl font-bold text-gray-900 md:mt-20 md:text-3xl">{{__('tournament.result')}}</h3>
         <div class="mt-3 aspect-w-16 aspect-h-9">
             <iframe src="https://www.youtube.com/embed/WHGEc6lMVOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
