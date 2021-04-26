@@ -25,7 +25,7 @@
         </ul>
         <h2>4. Add the tournament lobby</h2>
         <p>Once connected to <b>Fightcade2</b>, add the tournament lobby by searching "windjammers" in the game channel search function</p>
-        <p><b>Attention</b> à bien selectionner le lobby <b>ARCADE FC2</b></p>
+        <p><b>Be careful</b> to select <b>ARCADE FC2</b></p>
         <video controls width="500">
             <source src="{{asset('storage/webm/loobie.webm')}}" type="video/webm">
         </video>
