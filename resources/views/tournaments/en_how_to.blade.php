@@ -12,29 +12,29 @@
 <div class="px-4 pt-16 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto prose">
         <h1>How to 🥏</h1>
-        <h2>1. Installer Fightcade</h2>
-        <p>Télécharger et installer <b>Fightcade2</b> : <a href="https://www.fightcade.com/">https://www.fightcade.com/</a></p>
-        <h2>2. Se créer un compte</h2>
-        <p>Pour pouvoir vous connecter à <b>Fightcade2</b> vous devez vous créer un compte sur le site <a href="https://www.fightcade.com/register">https://www.fightcade.com/register</a></p>
-        <h2>3. Installer Windjammers</h2>
+        <h2>1. Install Fightcade</h2>
+        <p>Download and install <b>Fightcade2</b> : <a href="https://www.fightcade.com/">https://www.fightcade.com/</a></p>
+        <h2>2. Set up an account</h2>
+        <p>In order to connect to <b>Fightcade</b> 2 you'll have to create an account on the website : <a href="https://www.fightcade.com/register">https://www.fightcade.com/register</a></p>
+        <h2>3. Install Windjammers</h2>
         <ul>
-            <li>Lancez <b>Fightcade 2</b>, puis cliquer sur <code>ROMS > Open ROMS Folder</code></li>
-            <li>Dans la nouvelle fenêtre cliquez sur le lien <code>FBNeo ROMs</code>, ce lien vous emmène vers le dossier contenant les ROMs de l'émulateur</li>
-            <li>Dans ce dossier insérer les archives <b><a href="{{asset('storage/roms/neogeo.zip')}}">neogeo.zip</a></b> et <b><a href="{{asset('storage/roms/wjammers.zip')}}">wjammers.zip</a></b></li>
-            <li>Relancer <b>Fightcade2</b> pour prendre en compte les nouvelles ROMs</li>
+            <li>Launch <b>Fightcade2</b> and click <code>Roms > Open ROMS folder</code></li>
+            <li>In the pop-up window, clic on the link <code>FBNeo ROMs</code>, the link will bring you to the file in which the ROMs are placed</li>
+            <li>In that file, paste the archives <b><a href="{{asset('storage/roms/neogeo.zip')}}">neogeo.zip</a></b> and <b><a href="{{asset('storage/roms/wjammers.zip')}}">wjammers.zip</a></b></li>
+            <li>Reboot <b>Fightcade2</b> so it refreshes and takes into account the newly installed ROMs</li>
         </ul>
-        <h2>4. Ajouter le looby du tournoi</h2>
-        <p>Une fois connecté à <b>Fighcade2</b> ajouter le loobie du tournoi en recherchant l'identifiant : <b>Windjammers</b></p>
+        <h2>4. Add the tournament lobby</h2>
+        <p>Once connected to <b>Fightcade2</b>, add the tournament lobby by searching "windjammers" in the game channel search function</p>
         <p><b>Attention</b> à bien selectionner le lobby <b>ARCADE FC2</b></p>
         <video controls width="500">
             <source src="{{asset('storage/webm/loobie.webm')}}" type="video/webm">
         </video>
-        <h2>5. Préparer son compte aux matchs ranked</h2>
-        <p>Pour participer aux matchs il est préférable de paramétrer son compte en "Ranked Player"</p>
+        <h2>5. Set your account for ranked games</h2>
+        <p>It's better to set your account as "Ranked Player" in order to play</p>
         <video controls width="500">
             <source src="{{asset('storage/webm/rank.webm')}}" type="video/webm">
         </video>
-        <h2>6. Lancer un match</h2>
+        <h2>6. Play a match</h2>
         <video controls width="500">
             <source src="{{asset('storage/webm/fight.webm')}}" type="video/webm">
         </video>
