@@ -51,7 +51,7 @@
 
         <h3 class="mt-10 mb-4 text-2xl font-bold text-gray-900 md:mt-20 md:text-3xl">{{__('tournament.result')}}</h3>
         <div class="mt-3 aspect-w-16 aspect-h-9">
-            <iframe src="https://www.youtube.com/embed/WHGEc6lMVOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="{{$tournament['video']}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="grid gap-4 mt-6 md:grid-cols-3">
             @foreach($tournament['winners'] as $key => $winner)
