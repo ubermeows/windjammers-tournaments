@@ -52,7 +52,7 @@
         <h3 class="mt-10 mb-4 text-2xl font-bold text-gray-900 md:mt-20 md:text-3xl">{{__('tournament.result')}}</h3>
         <div class="mt-3 aspect-w-16 aspect-h-9">
             <iframe
-                src="{{$tournament['video']}}&parent=tournaments.windjammers.fr"
+                src="{{$tournament['video']}}"
                 allowfullscreen="true">
             </iframe>
         </div>
