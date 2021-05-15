@@ -53,6 +53,8 @@
         <div class="mt-3 aspect-w-16 aspect-h-9">
             <iframe
                 src="{{$tournament['video']}}"
+                height="100%"
+                width="100%"
                 allowfullscreen="true">
             </iframe>
         </div>
