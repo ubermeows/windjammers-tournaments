@@ -11,7 +11,9 @@ class TournamentController extends Controller
 {
     public function index(Request $request)
     {
-        $tournament = Tournament::select('slug')->latest()->first();  
+        $tournament = Tournament::select('slug')
+            ->latest('started_at')
+            ->first();  
 
         return redirect()->route('show', [
             'tournament_slug' => $tournament->slug,
