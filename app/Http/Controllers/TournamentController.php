@@ -12,6 +12,7 @@ class TournamentController extends Controller
     public function index(Request $request)
     {
         $tournament = Tournament::select('slug')
+            ->isAlive()
             ->latest('started_at')
             ->first();  
 

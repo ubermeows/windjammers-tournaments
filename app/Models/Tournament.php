@@ -11,6 +11,11 @@ class Tournament extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'started_at',
+        'alive',
+    ];
+
     protected $appends = ['localization', 'is_over'];
 
     protected $casts = [
@@ -33,5 +38,10 @@ class Tournament extends Model
     public function getIsOverAttribute(): bool
     {
         return ! empty($this->winners);
+    }
+
+    public function scopeIsAlive($query)
+    {
+        return $query->where('alive', true);
     }
 }

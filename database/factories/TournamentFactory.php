@@ -35,6 +35,7 @@ class TournamentFactory extends Factory
             'winners' => null,
             'video' => null,
             'started_at' => null,
+            'alive' => true,
         ];
     }
 
