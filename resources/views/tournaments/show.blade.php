@@ -26,7 +26,7 @@
             <span class="font-bold">{{__('tournament.streaming')}}</span> : <a href='https://www.twitch.tv/lamegaforgelive'>twitch.tv/lamegaforgelive</a>
         </p>
         <div class="mt-3">
-            {{__('tournament.rules')}} :
+            <span class="font-bold">{{__('tournament.rules')}}</span> :
             <ul class="mt-0">
                 @foreach($tournament['localization']['rules'] as $rule) 
                 <li>{!!$rule!!}</li> 
