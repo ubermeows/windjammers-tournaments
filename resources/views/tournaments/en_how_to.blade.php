@@ -12,8 +12,8 @@
 <div class="px-4 pt-16 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto prose">
         <h1>How to 🥏</h1>
-        <h2>1. S'inscrire au tournoi</h2>
-        <p>Pour commencer il est nécessaire de s'inscrire sur le challonge du tournoi en cliquant sur "Participer au tournoi".</p>
+        <h2>1. Register for the tournament</h2>
+        <p>First, you have to register on the tournament's Challonge page by clicking "join tournament".</p>
         <video controls width="500">
             <source src="{{asset('storage/webm/challonge.webm')}}" type="video/webm">
         </video>
