@@ -35,7 +35,6 @@
         </div>
         @if (! $tournament['is_over'])
         <p class="mt-3">{!!__('tournament.how_to', ['url' => route('howto')])!!}</p>
-        <p class="mt-3">{!!__('tournament.discord')!!}</p>
         <div class="mt-8 text-center">
             <a href="{{$tournament['challonge_url']}}" rel="noreferrer nofollow noopener" target="_blank" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-blue-700 bg-blue-100 border border-transparent rounded-md shadow-sm hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 {{__('tournament.participate')}}
