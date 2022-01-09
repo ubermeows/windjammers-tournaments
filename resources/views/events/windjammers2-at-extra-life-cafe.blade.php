@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @stack('metas')
     <title>Windjammers France</title>
-    <meta property='og:title' content="qsdqsdqs">
-    <meta property='og:description' content="qsdsqddsq">
+    <meta property='og:title' content="windjammers 2 at Extra Life Cafe">
+    <meta property='og:description' content="L'Extra Life Cafe organise le premier tournoi de Windjammers 2 pour fêter sa release !">
     <meta name="description" content="">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
