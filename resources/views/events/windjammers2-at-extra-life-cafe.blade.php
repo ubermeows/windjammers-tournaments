@@ -27,10 +27,10 @@
     <section class="relative flex items-center min-h-450px lg:min-h-600px xl:min-h-800px">
         <div class="relative z-10 max-w-screen-md px-4 mx-auto text-center sm:px-6">
             <h1 class="text-lg text-white md:text-2xl lg:text-3xl font-display text-shadow">windjammers 2 at extra life cafe</h1>
-            <h2 class="text-lg text-white md:text-1xl lg:text-1xl font-display text-shadow">qsdqsdsqd</h2>
+            <h2 class="text-lg text-white md:text-1xl lg:text-1xl font-display text-shadow"></h2>
         </div>
         <div class="scanlines"></div>
-        <div x-data="parallaxBackground()" x-ref="bg" @scroll.window="handleScroll" class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover -z-1" style="background-image: url('https://tournaments.windjammers.fr/storage/banners/windjammers2.jpg');background-position-x: center;"></div>
+        <div x-data="parallaxBackground()" x-ref="bg" @scroll.window="handleScroll" class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover -z-1" style="background-image: url('https://tournaments.windjammers.fr/storage/banners/extralife.jpg');background-position-x: center;"></div>
     </section>
     <section class="relative px-4 pt-16 pb-16 bg-white lg:px-8 lg:pb-24 md:pb-20 sm:px-6">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" class="absolute left-0 z-10 -mt-4 bottom-full">
@@ -42,8 +42,8 @@
                 <div class="aspect-w-16 aspect-h-9">
                   <iframe src="https://www.youtube.com/embed/or1-y1LQJCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <p>L'<a href='https://www.facebook.com/extralifecafe/'>Extra Life Café</a> organise ce samedi 21 janvier un tournoi physique pour fêter la sorti du jeu <a href='https://www.dotemu.com/game/windjammers-2/'>Windjammers 2</a> !</p>
-                <p>Tournoi gratuit et accessible à tous, il sera également l'occasion de rencontrer les membres de la <a href='https://twitter.com/windjammersfr'>communeauté Windjammers FR</a> ainsi que de tester le jeu librement !</p>
+                <p>L'<a href='https://www.facebook.com/extralifecafe/'>Extra Life Café</a> organise ce samedi 22 janvier un tournoi physique pour fêter la sorti du jeu <a href='https://www.dotemu.com/game/windjammers-2/'>Windjammers 2</a> !</p>
+                <p>Une cotisation de 10 euros sera demandé pour participer au tournoi, il sera également l'occasion de rencontrer les membres de la <a href='https://twitter.com/windjammersfr'>communeauté Windjammers FR</a> ainsi que de tester le jeu librement !</p>
                 <p>Des clés CD et des versions physiques du jeu offertes par Dotemu seront à gagner !</p>
                 <p>Le tournoi sera redifusé sur la chaine twitch de l'ExtraLifeCafe.</p>
             </div>
@@ -63,7 +63,7 @@
                     <li>Double élimination</li> 
                 </ul>
             </div>
-            <p class="mt-3">Pour participer, il suffit de t'inscrire sur ce Google Form ci dessous!</p>
+            <p class="mt-3">Pour participer, il suffit de venir t'inscrire sur Facebook !</p>
             <div class="mt-8 text-center">
                 <a href="#" rel="noreferrer nofollow noopener" target="_blank" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-blue-700 bg-blue-100 border border-transparent rounded-md shadow-sm hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                     {{__('tournament.participate')}}
