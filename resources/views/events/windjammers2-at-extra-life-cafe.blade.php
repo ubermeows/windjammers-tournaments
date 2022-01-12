@@ -43,7 +43,7 @@
                   <iframe src="https://www.youtube.com/embed/or1-y1LQJCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <p>L'<a href='https://www.facebook.com/extralifecafe/'>Extra Life Café</a> organise ce samedi 22 janvier un tournoi physique pour fêter la sorti du jeu <a href='https://www.dotemu.com/game/windjammers-2/'>Windjammers 2</a> !</p>
-                <p>Une cotisation de 10 euros sera demandé pour participer au tournoi, il sera également l'occasion de rencontrer les membres de la <a href='https://twitter.com/windjammersfr'>communeauté Windjammers FR</a> ainsi que de tester le jeu librement !</p>
+                <p>Une cotisation de 10 euros sera demandée pour participer au tournoi, il sera également l'occasion de rencontrer les membres de la <a href='https://twitter.com/windjammersfr'>communeauté Windjammers FR</a> ainsi que de tester le jeu librement !</p>
                 <p>Des clés CD et des versions physiques du jeu offertes par Dotemu seront à gagner !</p>
                 <p>Le tournoi sera redifusé sur la chaine twitch de l'ExtraLifeCafe.</p>
             </div>
